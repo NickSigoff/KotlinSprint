@@ -3,7 +3,7 @@ package org.example.lesson_5
 fun main() {
     val firstWinNumber = 15
     val secondWinNumber = 30
-    println("Введите два разных числа, чтобы сыграть в лоттерею")
+    println("Введите два разных числа от 0 до 42, чтобы сыграть в лоттерею")
     val userFirstNumber = readln().toInt()
     val userSecondNumber = readln().toInt()
 
