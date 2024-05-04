@@ -2,9 +2,9 @@ package org.example.lesson_3
 
 fun main() {
     var personAge = 20
-    var personName = "Татьяна"
+    val personName = "Татьяна"
     var personSurname = "Андреева"
-    var personThirdName = "Сергеевна"
+    val personThirdName = "Сергеевна"
 
     println("$personSurname $personName $personThirdName $personAge")
 
