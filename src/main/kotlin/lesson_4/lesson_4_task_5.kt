@@ -3,15 +3,14 @@ package org.example.lesson_4
 import java.util.*
 
 fun main() {
-    val input = Scanner(System.`in`)
     println("Корпус поврежден? true/false")
-    val isDamaged = input.nextBoolean()
+    val isDamaged = readln().toBoolean()
     println("Введите количество членов команды")
-    val crew = input.nextInt()
+    val crew = readln().toInt()
     println("Введите количество ящиков с провизией")
-    val boxesOfProvision = input.nextInt()
+    val boxesOfProvision = readln().toInt()
     println("Погода благоприятная? true/false")
-    val isFavourableWeather = input.nextBoolean()
+    val isFavourableWeather = readln().toBoolean()
 
     val canBeSent =
         (!isDamaged && crew in 55..70 && boxesOfProvision > 50) || (crew == 70 && isFavourableWeather && boxesOfProvision >= 50)
