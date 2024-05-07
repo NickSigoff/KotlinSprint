@@ -11,9 +11,13 @@ fun main() {
         println("Вы ввели одинаковые числа. Попробуйте ещё раз.")
     }
 
-    if ((userFirstNumber == firstWinNumber || userFirstNumber == secondWinNumber) && (userSecondNumber == firstWinNumber || userSecondNumber == secondWinNumber)) {
+    if ((userFirstNumber == firstWinNumber || userFirstNumber == secondWinNumber) &&
+        (userSecondNumber == firstWinNumber || userSecondNumber == secondWinNumber)
+    ) {
         println("Поздравляем! Вы выиграли главный приз!")
-    } else if ((userFirstNumber == firstWinNumber || userFirstNumber == secondWinNumber) || (userSecondNumber == firstWinNumber || userSecondNumber == secondWinNumber)) {
+    } else if (userFirstNumber == firstWinNumber || userFirstNumber == secondWinNumber ||
+        userSecondNumber == firstWinNumber || userSecondNumber == secondWinNumber
+    ) {
         println("Вы выиграли утешительный приз!")
     } else {
         println("Неудача!")
